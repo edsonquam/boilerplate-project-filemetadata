@@ -23,7 +23,6 @@ app.post("/api/fileanalyse", upload.single("upfile"), (req, res) => {
     type: mimetype,
     size: size,
   });
-  console.log(req.file);
 });
 
 const port = process.env.PORT || 3000;
